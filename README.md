@@ -52,6 +52,11 @@
 
 ## 📲 Installation (Termux)
 
+### Step 0 — Download Termux (If you don't have it)
+> ⚠️ **Important:** Do NOT download Termux from the Play Store (it's deprecated and broken).
+> 
+> Download the official working version here → [Termux (Direct Download)](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk) (Fast Github link)
+
 ### Step 1 — Update Termux packages
 ```bash
 pkg update -y && pkg upgrade -y
