@@ -64,7 +64,7 @@ pkg install python termux-api -y
 
 > ⚠️ **Important:** Also install **Termux:API** app from F-Droid (NOT Play Store).
 > 
-> Download here → [F-Droid Termux:API](https://f-droid.org/packages/com.termux.api/)
+> Download here → [Termux:API (Direct Download)](https://github.com/termux/termux-api/releases/download/v0.50.1/termux-api_v0.50.1+github-debug.apk) (Fast Github link)
 
 ### Step 3 — Install Python dependencies
 ```bash
