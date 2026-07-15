@@ -75,7 +75,7 @@ pip install requests colorama
 ```bash
 # Clone the repo
 git clone https://github.com/asrarkhann116-ops/X-osint
-cd xosint
+cd X-osint
 ```
 
 Or download the single file directly:
