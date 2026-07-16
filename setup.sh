@@ -16,7 +16,7 @@ echo -e "\e[90m[*] Updating repositories...\e[0m"
 pkg update -y && pkg upgrade -y
 
 echo -e "\e[90m[*] Installing Python and Termux API...\e[0m"
-pkg install python termux-api -y
+pkg install python termux-api iproute2 -y
 
 echo -e "\e[90m[*] Installing Python requirements...\e[0m"
 pip install -r requirements.txt
