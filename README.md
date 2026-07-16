@@ -19,7 +19,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
 <br>
-<img src="xosint.png" alt="Logo" width="300">
+<img src="xosint_logo.png" alt="Logo" width="300">
 <br>
 
 <br>
