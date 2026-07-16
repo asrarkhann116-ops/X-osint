@@ -121,7 +121,7 @@ bash setup.sh
 python xosint.py
 ```
 
-###  **DONT FORGET TO GIVE ALL PERMISSION IT ASKS , OTHERWISE OSINTING WILL NOT WORK**
+###  🔴 **DONT FORGET TO GIVE ALL PERMISSION IT ASKS , OTHERWISE OSINTING WILL NOT WORK** 🔴
 ---
 
 ## ⚠️ First Run — Permissions
