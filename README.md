@@ -1,10 +1,12 @@
 <div align="center">
 
 ```text
-__  _____ _____ ___ _  _ _____
-\ \/ / _ \  ___|_ _| \| |_   _|
- >  < (_) \__ \ | || .  | | |
-/_/\_\___/____/___/_|\_| |_|
+██╗  ██╗ ██████╗ ███████╗██╗███╗   ██╗████████╗
+╚██╗██╔╝██╔═══██╗██╔════╝██║████╗  ██║╚══██╔══╝
+ ╚███╔╝ ██║   ██║███████╗██║██╔██╗ ██║   ██║   
+ ██╔██╗ ██║   ██║╚════██║██║██║╚██╗██║   ██║   
+██╔╝ ██╗╚██████╔╝███████║██║██║ ╚████║   ██║   
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝   ╚═╝   
 ```
 
 # XOSINT v3.0 — Advanced Intelligence Framework
@@ -15,6 +17,10 @@ __  _____ _____ ___ _  _ _____
 ![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Windows%20%7C%20Linux-green?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-3.0-cyan?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+
+<br>
+<img src="xosint.PNG" alt="XOSINT Interface" width="600">
+<br>
 
 </div>
 
