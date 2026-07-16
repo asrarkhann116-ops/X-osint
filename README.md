@@ -19,11 +19,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
 <br>
-<img src="xosint_logo.png" alt="XOSINT LOGO" width="400">
-<br>
-
-<br>
-<img src="Xosint123.PNG" alt="XOSINT Interface" width="600">
+<img src="xosint.PNG" alt="XOSINT Interface" width="600">
 <br>
 
 </div>
@@ -69,20 +65,69 @@ With v3.0, it utilizes the massive **Spiderfoot/WhatsMyName** engine to check ov
 
 ---
 
-## 📲 Installation & Requirements
+#
+## 📲 Installation (Termux)
 
-### ⚠️ IMPORTANT: Termux Permissions (Android)
-To unlock the full potential of XOSINT on Android, you **must** use the F-Droid version of Termux and install the Termux:API app. On the first run, the tool will ask for several permissions. **You must ALLOW ALL PERMISSIONS** (Storage, Location, Microphone, Camera, Contacts, SMS, Call Log) for the advanced system modules to function correctly. If you deny them, the tool will not operate.
+### Step 0 — Download Termux (If you don't have it)
+> ⚠️ **Important:** Do NOT download Termux from the Play Store (it's deprecated and broken).
+> 
+> Download the official working version here → [Termux (Direct Download)](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk) (Fast Github link)
 
-### Android (Termux) Installation
+### Step 1 — Update Termux packages
 ```bash
 pkg update -y && pkg upgrade -y
+```
+
+### Step 2 — Install required packages
+```bash
 pkg install python termux-api -y
+```
+
+> ⚠️ **Important:** Also install **Termux:API** app from F-Droid (NOT Play Store).
+> 
+> Download here → [Termux:API (Direct Download)](https://github.com/termux/termux-api/releases/download/v0.50.1/termux-api_v0.50.1+github-debug.apk) (Fast Github link)
+
+### Step 3 — Install Python dependencies
+```bash
 pip install requests colorama
+```
+
+### Step 4 — Download xosint
+```bash
+# Clone the repo
 git clone https://github.com/asrarkhann116-ops/X-osint
 cd X-osint
 ```
-> **Termux:API Reminder:** Download the Termux:API app from F-Droid to enable hardware modules.
+
+Or download the single file directly:
+```bash
+curl -O https://raw.githubusercontent.com/asrarkhann116-ops/X-osint/main/xosint.py
+```
+
+### Step 5 — Run
+```bash
+python xosint.py
+```
+
+---
+
+## ⚠️ First Run — Permissions
+
+On the **first run**, xosint will request several Android permissions.  
+These are needed for full functionality:
+
+| Permission | Used For |
+|------------|----------|
+| Storage | Save temporary scan results |
+| Location | Network-based location for geo modules |
+| Camera | Future: QR code scanning module |
+| Microphone | Future: Voice OSINT module |
+| Contacts | Future: Contact cross-reference |
+| SMS | Future: SMS-based verification checks |
+| Call Log | Future: Number analysis module |
+
+> ✅ **Allow all permissions** when prompted.  
+> If you accidentally deny any, re-run `python xosint.py` and allow when asked again.
 
 ### Windows / Linux Installation
 ```bash
