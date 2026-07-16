@@ -91,28 +91,37 @@ pkg install python termux-api -y
 > 
 > Download here → [Termux:API (Direct Download)](https://github.com/termux/termux-api/releases/download/v0.50.1/termux-api_v0.50.1+github-debug.apk) (Fast Github link)
 
-### Step 3 — Install Python dependencies
-```bash
-pip install requests colorama
-```
 
-### Step 4 — Download xosint
+### Step 3 — Download xosint
 ```bash
 # Clone the repo
 git clone https://github.com/asrarkhann116-ops/X-osint
+```
+
+```bash
 cd X-osint
 ```
-
-Or download the single file directly:
+### Step 3 — Install Python dependencies
 ```bash
-curl -O https://raw.githubusercontent.com/asrarkhann116-ops/X-osint/main/xosint.py
+pip install -r requirements.txt
 ```
 
-### Step 5 — Run
+### Step 4 — Run
+```bash
+bash install.sh
+```
+###  **or do**
+
+```bash
+bash setup.sh
+```
+
+###  USAGE FOR RUNNING ANYTIME
 ```bash
 python xosint.py
 ```
 
+###  **DONT FORGET TO GIVE ALL PERMISSION IT ASKS , OTHERWISE OSINTING WILL NOT WORK**
 ---
 
 ## ⚠️ First Run — Permissions
