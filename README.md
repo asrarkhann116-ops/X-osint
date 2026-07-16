@@ -1,225 +1,128 @@
 <div align="center">
 
-```
- ██╗  ██╗ ██████╗ ███████╗██╗███╗   ██╗████████╗
- ╚██╗██╔╝██╔═══██╗██╔════╝██║████╗  ██║╚══██╔══╝
-  ╚███╔╝ ██║   ██║███████╗██║██╔██╗ ██║   ██║   
-  ██╔██╗ ██║   ██║╚════██║██║██║╚██╗██║   ██║   
- ██╔╝ ██╗╚██████╔╝███████║██║██║ ╚████║   ██║   
- ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝   ╚═╝  
+```text
+__  _____ _____ ___ _  _ _____
+\ \/ / _ \  ___|_ _| \| |_   _|
+ >  < (_) \__ \ | || .  | | |
+/_/\_\___/____/___/_|\_| |_|
 ```
 
-# XOSINT — Advanced OSINT Framework
+# XOSINT v3.0 — Advanced Intelligence Framework
 
-**The most powerful open-source OSINT toolkit for Termux & Linux**
+**The ultimate open-source OSINT toolkit with Deep Web Dorking, Spiderfoot Engine, and System Integration.**
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)
-![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-green?style=flat-square)
-![Version](https://img.shields.io/badge/Version-2.1-cyan?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Windows%20%7C%20Linux-green?style=flat-square)
+![Version](https://img.shields.io/badge/Version-3.0-cyan?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
-
-<br>
-<img src="xosint_logo.png" alt="XOSINT Logo" width="200">
-<br>
-<img src="xosint.PNG" alt="XOSINT Interface" width="600">
 
 </div>
 
 ---
 
-## 📌 What is xosint?
+## 📌 What is XOSINT v3.0?
 
-**xosint** is a fast, modular OSINT (Open Source Intelligence) framework built for **Termux on Android** and Linux systems. It allows security researchers and ethical hackers to gather publicly available intelligence from a single terminal interface.
+**XOSINT** has evolved into a full-scale **Hybrid Intelligence Framework**. It runs natively on **Windows, Linux, and Android (Termux)**. 
 
-> **Educational purposes only. Use responsibly.**
+With v3.0, it utilizes the massive **Spiderfoot/WhatsMyName** engine to check over 700+ platforms concurrently in seconds. When executed on Android (Termux), it integrates deeply with the device system, requiring specific hardware permissions to unlock advanced forensic and network scanning modules.
+
+> **Educational and Red Team purposes only. Use responsibly.**
 
 ---
 
-## ✨ Features
+## ✨ v3.0 Upgrades
+
+- **Spiderfoot Engine Integration**: The Username Hunt (Option 7) now dynamically fetches the 700+ platform database from the WhatsMyName project and scans them concurrently via Fast Threading.
+- **Advanced Automated Profiling**: Generates an intelligent, automated brief summarizing an entity's footprint, origins, and alternative handles dynamically.
+- **30 Deep-Recon Modules**: 30 powerful modules including Dark Web searching, EXIF extraction, Shodan suites, CVE scanning, and more.
+- **Cross-Platform Render Engine**: Completely rewritten terminal rendering engine to prevent encoding crashes on Windows PowerShell and legacy terminals.
+- **Termux Deep System Integration**: Advanced hardware manipulation and network exploitation capabilities utilizing the native Android OS APIs.
+
+---
+
+## 🚀 Features (30 Modules)
 
 | Module | Description |
 |--------|-------------|
-| 🌐 **IP / Domain Lookup** | Geo, ISP, ASN, open ports, CVEs via Shodan |
-| 🔍 **DNS Records** | A, AAAA, MX, NS, TXT, CNAME, SOA lookup |
-| 📋 **WHOIS** | Registrar, creation date, expiry, nameservers |
-| 🗂️ **Subdomain Finder** | crt.sh + HackerTarget enumeration |
-| 📱 **Phone Investigator** | Country, carrier, line type |
-| 👤 **Username Search** | 15 platforms — GitHub, Instagram, Twitter... |
-| 📧 **Email Investigator** | Breach check, disposable, MX, Gravatar |
-| 📡 **My IP Info** | Your public IP full details |
+| 🌐 **IP / Domain Deep Lookup** | Geo, ISP, ASN, Open Ports, CVEs via Shodan |
+| 🔍 **DNS Infrastructure** | A, AAAA, MX, NS, TXT, CNAME, SOA lookup |
+| 👤 **Username Hunt (Spiderfoot)** | 700+ platforms checked concurrently + Deep Profiling |
+| 🗂️ **Subdomain Finder** | crt.sh + HackerTarget + Offline enumeration |
+| 📱 **Phone Investigator** | Global region mapping + Infostealer DB check |
+| 📧 **Email OSINT** | Breach check, disposable, MX, Gravatar + Hunter.io |
+| 🏴‍☠️ **Breach / Stealer DB** | Scans HudsonRock & dark databases for leaks |
+| 🕷️ **Google Dorking** | Live DuckDuckGo scraping & Offline 400+ Dork list |
+| 📍 **EXIF GPS Extractor** | Rip coordinates and metadata from images |
+| 🛡️ **SMTP Spoof Analysis** | Check DMARC/SPF vulnerability of domains |
+| 🚗 **VIN & US License Plate** | Vehicle intelligence decoding |
+| 🤖 **Code & Text Analysis** | SpaCy NLP & Code syntax analysis |
 
 ---
 
-## 📲 Installation (Termux)
+## 📲 Installation & Requirements
 
-### Step 0 — Download Termux (If you don't have it)
-> ⚠️ **Important:** Do NOT download Termux from the Play Store (it's deprecated and broken).
-> 
-> Download the official working version here → [Termux (Direct Download)](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk) (Fast Github link)
+### ⚠️ IMPORTANT: Termux Permissions (Android)
+To unlock the full potential of XOSINT on Android, you **must** use the F-Droid version of Termux and install the Termux:API app. On the first run, the tool will ask for several permissions. **You must ALLOW ALL PERMISSIONS** (Storage, Location, Microphone, Camera, Contacts, SMS, Call Log) for the advanced system modules to function correctly. If you deny them, the tool will not operate.
 
-### Step 1 — Update Termux packages
+### Android (Termux) Installation
 ```bash
 pkg update -y && pkg upgrade -y
-```
-
-### Step 2 — Install required packages
-```bash
 pkg install python termux-api -y
-```
-
-> ⚠️ **Important:** Also install **Termux:API** app from F-Droid (NOT Play Store).
-> 
-> Download here → [Termux:API (Direct Download)](https://github.com/termux/termux-api/releases/download/v0.50.1/termux-api_v0.50.1+github-debug.apk) (Fast Github link)
-
-### Step 3 — Install Python dependencies
-```bash
 pip install requests colorama
-```
-
-### Step 4 — Download xosint
-```bash
-# Clone the repo
 git clone https://github.com/asrarkhann116-ops/X-osint
 cd X-osint
 ```
+> **Termux:API Reminder:** Download the Termux:API app from F-Droid to enable hardware modules.
 
-Or download the single file directly:
+### Windows / Linux Installation
 ```bash
-curl -O https://raw.githubusercontent.com/asrarkhann116-ops/X-osint/main/xosint.py
+git clone https://github.com/asrarkhann116-ops/X-osint
+cd X-osint
+pip install requests colorama
 ```
 
-### Step 5 — Run
+---
+
+## 💻 Usage
+
 ```bash
 python xosint.py
 ```
 
----
+The tool operates via a seamless CLI menu. Just enter the number of the module you wish to execute.
 
-## ⚠️ First Run — Permissions
+### Example: Username Hunt (Spiderfoot Engine)
+```text
+xosint>> 7
+  Username: johndoe
 
-On the **first run**, xosint will request several Android permissions.  
-These are needed for full functionality:
-
-| Permission | Used For |
-|------------|----------|
-| Storage | Save temporary scan results |
-| Location | Network-based location for geo modules |
-| Camera | Future: QR code scanning module |
-| Microphone | Future: Voice OSINT module |
-| Contacts | Future: Contact cross-reference |
-| SMS | Future: SMS-based verification checks |
-| Call Log | Future: Number analysis module |
-
-> ✅ **Allow all permissions** when prompted.  
-> If you accidentally deny any, re-run `python xosint.py` and allow when asked again.
-
----
-
-## 🚀 Usage
-
-```
-  ┌─────────────────────────────────────────┐
-  │  [1]  IP / Domain Deep Lookup          │
-  │  [2]  DNS Records Lookup               │
-  │  [3]  WHOIS Lookup                     │
-  │  [4]  Subdomain Finder                 │
-  │  [5]  Phone Number Investigator        │
-  │  [6]  Username Search (15 platforms)   │
-  │  [7]  Email Investigator               │
-  │  [8]  My Public IP Info                │
-  │  [0]  Exit                             │
-  └─────────────────────────────────────────┘
-
-  xosint ❯ 
-```
-
-### Examples
-
-**IP Lookup:**
-```
-xosint ❯ 1
-Target IP/Domain: 8.8.8.8
-```
-
-**Username Search:**
-```
-xosint ❯ 6
-Username: johndoe
-[FOUND]   GitHub        → https://github.com/johndoe
-[FOUND]   Reddit        → https://reddit.com/user/johndoe
-[MISS ]   Instagram
-```
-
-**Subdomain Finder:**
-```
-xosint ❯ 4
-Domain: example.com
-→ mail.example.com
-→ api.example.com
-→ dev.example.com
-Total: 3 subdomains found
+[USERNAME HUNT & PROFILING] johndoe
+  ----------------------------------------------------
+  [!] Running Deep Web Dork for broad footprint (Alts/Mentions)...
+  [DORK-HIT] https://www.instagram.com/johndoe/
+  [~] Fetching Spiderfoot/WhatsMyName database (700+ sites)...
+  [!] Scanning 719 platforms in parallel... (Fast Threading)
+  [FOUND]  GitHub           >> https://github.com/johndoe
+  [FOUND]  Reddit           >> https://reddit.com/user/johndoe
+  [FOUND]  Patreon          >> https://www.patreon.com/johndoe
+  Spiderfoot Scan: Added 14 additional platforms.
+  ----------------------------------------------------
 ```
 
 ---
 
-## 📦 Requirements
+## 📦 Core Dependencies
 
-```
-python >= 3.8
-requests
-colorama
-termux-api (pkg)
-Termux:API (Android app from F-Droid)
-```
-
----
-
-## 🔧 Troubleshooting
-
-**"Permission denied" errors?**
-```bash
-# Re-run and allow all permissions
-python xosint.py
-```
-
-**termux-api commands not working?**
-```bash
-# Make sure Termux:API app is installed from F-Droid
-pkg install termux-api
-```
-
-**Slow results?**
-- Check your internet connection
-- Some APIs have rate limits — wait 30 seconds between scans
-
-**Colors not showing properly?**
-```bash
-pip install colorama --upgrade
-```
-
----
-
-## 📁 Project Structure
-
-```
-xosint/
-├── xosint.py       # Main framework (single file)
-└── README.md       # This file
-```
+- `python >= 3.8`
+- `requests`
+- `colorama`
+- Optional Modules: `hunter_io_api.txt` (For Hunter.io Email OSINT)
 
 ---
 
 ## 🤝 Contributing
 
 Pull requests welcome! For major changes, open an issue first.
-
-1. Fork the repo
-2. Create your branch: `git checkout -b feature/new-module`
-3. Commit: `git commit -m 'Add new module'`
-4. Push: `git push origin feature/new-module`
-5. Open a Pull Request
-
----
 
 ## 📄 License
 
@@ -229,8 +132,6 @@ MIT License — free to use, modify, and distribute.
 
 <div align="center">
 
-**Made with ❤️ for the OSINT community**
-
-⭐ Star this repo if you found it useful!
+**Made with ❤️ for the OSINT & Red Team community**
 
 </div>
